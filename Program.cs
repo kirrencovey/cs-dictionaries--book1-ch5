@@ -218,12 +218,81 @@ namespace dictionaries
 
             // use square bracket lookup to get the definition of a specific word
 
-            Console.WriteLine(wordsAndDefinitions["Goose"]);
+            // Console.WriteLine(wordsAndDefinitions["Goose"]);
 
             // loop over dictionary to get the following output: "The definition of [WORD] is [DEFINITION]"
             foreach (KeyValuePair<string, string> word in wordsAndDefinitions)
             {
                 // Console.WriteLine($"The definition of {word.Key} is: '{word.Value}'");
+            }
+
+        }
+
+        {// Lightning Exercise 4:
+        // Now, we are going to rebuild the structure of our data. Instead of one dictionary with key value pairs for words and definitions. We want to track more than just the word and its definition, so we are going to build a list of dictionaries.
+
+            // Make a new list
+            List<Dictionary<string, string>> dictionaryOfWords = new List<Dictionary<string, string>>();
+
+            // We want to track the following about each word: word, definition, part of speech, example sentence
+
+            /*
+                Example of one dictionary in the list:
+                {
+                    "word": "excited",
+                    "definition": "having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness",
+                    "part of speech": "adjective",
+                    "example sentence": "I am excited to learn C#!"
+                }
+             */
+
+            // create dictionary to represent a new word
+            Dictionary<string, string> excitedWord = new Dictionary<string, string>();
+
+            excitedWord.Add("word", "excited");
+            excitedWord.Add("definition", "having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness");
+            excitedWord.Add("part of speech", "adjective");
+            excitedWord.Add("example sentence", "I am excited to learn C#!");
+
+            // Add dictionaries to your list
+            // create another dictionary and add that to the list
+            Dictionary<string, string> gooseWord = new Dictionary<string, string>();
+
+            gooseWord.Add("word", "goose");
+            gooseWord.Add("definition", "a large duck-like bird");
+            gooseWord.Add("part of speech", "noun");
+            gooseWord.Add("example sentence", "duck, duck, GOOSE!");
+
+            Dictionary<string, string> swimWord = new Dictionary<string, string>();
+
+            swimWord.Add("word", "swim");
+            swimWord.Add("definition", "to traverse through water");
+            swimWord.Add("part of speech", "verb");
+            swimWord.Add("example sentence", "Look at that goose swim!");
+
+            // Add dictionaries to list
+            dictionaryOfWords.Add(excitedWord);
+            dictionaryOfWords.Add(gooseWord);
+            dictionaryOfWords.Add(swimWord);
+
+            // loop over your list of dictionaries and output the data
+
+            /*
+            Example output for one word in the list of dictionaries:
+                word: excited
+                definition: having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness
+                part of speech: adjective
+                example sentence: I am excited to learn C#!
+             */
+
+            // iterate list
+            foreach (Dictionary<string, string> wordd in dictionaryOfWords)
+            {
+                // iterate key value pair of dictionary
+                foreach (KeyValuePair<string, string> kvp in wordd)
+                {
+                    Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                }
             }
 
         }
