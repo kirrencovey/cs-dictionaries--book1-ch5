@@ -1,0 +1,11 @@
+/Users/kirren/workspace/csharp/exercises/dictionaries/bin/Debug/netcoreapp2.2/dictionaries.deps.json
+/Users/kirren/workspace/csharp/exercises/dictionaries/bin/Debug/netcoreapp2.2/dictionaries.runtimeconfig.json
+/Users/kirren/workspace/csharp/exercises/dictionaries/bin/Debug/netcoreapp2.2/dictionaries.runtimeconfig.dev.json
+/Users/kirren/workspace/csharp/exercises/dictionaries/bin/Debug/netcoreapp2.2/dictionaries.dll
+/Users/kirren/workspace/csharp/exercises/dictionaries/bin/Debug/netcoreapp2.2/dictionaries.pdb
+/Users/kirren/workspace/csharp/exercises/dictionaries/obj/Debug/netcoreapp2.2/dictionaries.csprojAssemblyReference.cache
+/Users/kirren/workspace/csharp/exercises/dictionaries/obj/Debug/netcoreapp2.2/dictionaries.csproj.CoreCompileInputs.cache
+/Users/kirren/workspace/csharp/exercises/dictionaries/obj/Debug/netcoreapp2.2/dictionaries.AssemblyInfoInputs.cache
+/Users/kirren/workspace/csharp/exercises/dictionaries/obj/Debug/netcoreapp2.2/dictionaries.AssemblyInfo.cs
+/Users/kirren/workspace/csharp/exercises/dictionaries/obj/Debug/netcoreapp2.2/dictionaries.dll
+/Users/kirren/workspace/csharp/exercises/dictionaries/obj/Debug/netcoreapp2.2/dictionaries.pdb
